@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentativa</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        width: 100px;
+        height: 40px;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }   
+</style>
+<body>
+    <h1>Espero que funcione</h1>
+    
+
+    <form id="gerarMaterias">
+
+        <label class="form-label" for="Numaterias">Coloque a quantidade de materias desejadas:</label>
+        <input class="form-control" type="number" id="Numaterias" name="Numaterias" min = "1"required>
+    
+        <br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <div id = "materiasContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
