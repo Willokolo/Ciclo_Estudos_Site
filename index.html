@@ -3,50 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
     <title>Tentativa</title>
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f4f4f4;
-    }
+<body class = "bg-dark text-white">
+  
+    <div class = "container-fluid p-0 mb-0 d-flex flex">
 
-    h1 {
-        color: #333;
-    }
+        <div class = "col-3 bg-light text-dark mx-auto p-4 mt-4 rounded-3 alignt-items-">
+            <form id="gerarMaterias">
+                <label class="form-label" for="Numaterias">Coloque a quantidade de materias desejadas:</label>
+                <input class="form-control" type="number" id="Numaterias" name="Numaterias" min = "1"required>
+                <br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
 
-    .form-label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-    }
+        <div>
+            <div class="col-3 bg-light text-dark mx-auto p-4 mt-4 rounded-3">
+                 <div id = "materiasContainer" class="mt-4"></div>
+            </div>
+        </div>
 
-    .form-control {
-        width: 100px;
-        height: 40px;
-        padding: 8px;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-    }   
-</style>
-<body>
-    <h1>Espero que funcione</h1>
-    
-
-    <form id="gerarMaterias">
-
-        <label class="form-label" for="Numaterias">Coloque a quantidade de materias desejadas:</label>
-        <input class="form-control" type="number" id="Numaterias" name="Numaterias" min = "1"required>
-    
-        <br>
-
-        <button type="submit">Enviar</button>
-
-    </form>
-
-    <div id = "materiasContainer"></div>
+    </div>
 
 <script src="script.js"></script>
+<script src="style/js/bootstrap.min.js"></script>
 </body>
 </html>

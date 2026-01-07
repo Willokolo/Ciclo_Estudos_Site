@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
+    <title>Tentativa</title>
+</head>
+
+<body class="bg-dark text-white">
+
+    <div class="container-fluid p-4">
+
+        <div class="row justify-content-between gap-2">
+
+            <!-- COLUNA DO FORM -->
+            <div class="col-6 col-md-3 bg-light text-dark p-4 rounded-3" style="height: 200px;">
+
+                <form id="gerarMaterias">
+                    <label class="form-label" for="Numaterias">
+                        Coloque a quantidade de matérias desejadas:
+                    </label>
+                    <input class="form-control" type="number" id="Numaterias" min="1" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary w-40">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+
+            <!-- COLUNA DOS CARDS -->
+            <div class="col-10 col-md-6 bg-light text-dark p-4 rounded-3">
+                <div id="materiasContainer"></div>
+            </div>
+
+            <div class="col-4 col-md-2 ">
+                <div id="FuturaDivParaComerciais"></div> <!--isso tem que dar certo, i want money -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script2.js"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
