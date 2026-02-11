@@ -78,6 +78,17 @@ function populateTableCorrect() {
         row.innerHTML = generateTr(materia, resultInt);
         tbody.appendChild(row); // Adiciona a linha ao corpo da tabela
     });
+
+    localStorage.setItem('TabelaGerada', true);
 }
 
 populateTableCorrect();
+
+function apagarCiclo() {
+    if (confirm("Tem certeza que deseja apagar o ciclo?")) {
+        localStorage.removeItem("materiasData");
+        localStorage.removeItem("qtdHoras");
+        localStorage.setItem("TabelaGerada", "false");
+        window.location.href = "../pages/Index.html";
+    }
+}
