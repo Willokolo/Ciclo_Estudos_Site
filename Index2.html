@@ -15,7 +15,7 @@
         <div class="row justify-content-between gap-2">
 
             <!-- COLUNA DO FORM -->
-            <div class="col-6 col-md-3 bg-light text-dark p-4 rounded-3" style="height: 200px;">
+            <div class="col-6 col-md-3 bg-light text-dark p-4 rounded-3" style="height: 300px;">
 
                 <form id="gerarMaterias">
                     <label class="form-label" for="Numaterias">
@@ -23,6 +23,14 @@
                     </label>
                     <input class="form-control" type="number" id="Numaterias" min="1" required>
                     <br>
+
+                    <label class="form-label" for="QtdHoras">
+                        Coloque a quantidade minima de horas de estudo por semana:
+                    </label>
+                    <input class="form-control" type="number" id="QtdHoras" min="1" required>
+                    <br>
+                    
+
                     <button type="submit" class="btn btn-primary w-40">
                         Enviar
                     </button>
