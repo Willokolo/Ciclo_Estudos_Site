@@ -1,19 +1,19 @@
- function initTabelaGerada() {
-  if (localStorage.getItem("TabelaGerada") === null) {
-    localStorage.setItem("TabelaGerada", "false");
-  }
+function initTabelaGerada() {
+    if (localStorage.getItem("TabelaGerada") === null) {
+        localStorage.setItem("TabelaGerada", "false");
+    }
 }
 
 function getBaseUrl() {
-  const host = window.location.hostname;
+    const host = window.location.hostname;
 
-  // Se estiver no GitHub Pages
-  if (host.includes("github.io")) {
-    return "/Ciclo_Estudos_Site";
-  }
+    // Se estiver no GitHub Pages
+    if (host.includes("github.io")) {
+        return "/Ciclo_Estudos_Site";
+    }
 
-  // Se estiver localmente
-  return "";
+    // Se estiver localmente
+    return "";
 }
 
 function Menu() {
@@ -33,11 +33,9 @@ function Menu() {
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                             <li class="nav-item">
-<<<<<<< HEAD
+
                                 <a class="nav-link" href="${BASE_URL}/index.html">Início</a>
-=======
-                                <a class="nav-link" href="../index.html">Início</a>
->>>>>>> aa96b9948d9efd355e0359313ebaa0f0b3fe55a4
+
                             </li>
 
                             <li class="nav-item">
@@ -55,7 +53,7 @@ function Menu() {
             </nav>`;
 
     } else {
-         return ` 
+        return ` 
             <nav class="navbar navbar-expand-lg bg-primary w-100" data-bs-theme="dark">
                 <div class="container-fluid">
 
@@ -67,12 +65,8 @@ function Menu() {
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                             <li class="nav-item">
-<<<<<<< HEAD
                                 <a class="nav-link" href="${BASE_URL}/index.html">Início</a>
-=======
-                                <a class="nav-link" href="../index.html">Início</a>
->>>>>>> aa96b9948d9efd355e0359313ebaa0f0b3fe55a4
-                            </li>
+                      </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="${BASE_URL}/pages/CriarCiclo.html">Cria seu Cíclo</a>
@@ -98,7 +92,7 @@ function generateMenu() {
 
 generateMenu();
 
-//O CODIGO ABAIXO FUNCIONA NO LOCALHOST MAS NÃO NO AR 
+//O CODIGO ABAIXO FUNCIONA NO LOCALHOST MAS NÃO NO AR
 // function initTabelaGerada() {
 //   if (localStorage.getItem("TabelaGerada") === null) {
 //     localStorage.setItem("TabelaGerada", "false");
@@ -140,7 +134,7 @@ generateMenu();
 //             </nav>`;
 
 //     } else {
-//          return ` 
+//          return `
 //             <nav class="navbar navbar-expand-lg bg-primary w-100" data-bs-theme="dark">
 //                 <div class="container-fluid">
 
