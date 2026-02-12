@@ -89,6 +89,6 @@ function apagarCiclo() {
         localStorage.removeItem("materiasData");
         localStorage.removeItem("qtdHoras");
         localStorage.setItem("TabelaGerada", "false");
-        window.location.href = "./index.html";
+        window.location.href = "../index.html";
     }
 }
