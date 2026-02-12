@@ -1,4 +1,4 @@
-function initTabelaGerada() {
+ function initTabelaGerada() {
   if (localStorage.getItem("TabelaGerada") === null) {
     localStorage.setItem("TabelaGerada", "false");
   }
@@ -33,7 +33,11 @@ function Menu() {
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                             <li class="nav-item">
+<<<<<<< HEAD
                                 <a class="nav-link" href="${BASE_URL}/index.html">Início</a>
+=======
+                                <a class="nav-link" href="../index.html">Início</a>
+>>>>>>> aa96b9948d9efd355e0359313ebaa0f0b3fe55a4
                             </li>
 
                             <li class="nav-item">
@@ -63,7 +67,11 @@ function Menu() {
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                             <li class="nav-item">
+<<<<<<< HEAD
                                 <a class="nav-link" href="${BASE_URL}/index.html">Início</a>
+=======
+                                <a class="nav-link" href="../index.html">Início</a>
+>>>>>>> aa96b9948d9efd355e0359313ebaa0f0b3fe55a4
                             </li>
 
                             <li class="nav-item">
@@ -86,7 +94,6 @@ function Menu() {
 function generateMenu() {
     const navBarDiv = document.querySelector('.navBarDiv');
     navBarDiv.innerHTML = Menu();
-
 }
 
 generateMenu();
