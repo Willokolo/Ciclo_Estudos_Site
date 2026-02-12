@@ -19,7 +19,7 @@ function Menu() {
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                             <li class="nav-item">
-                                <a class="nav-link" href="../Index.html">Início</a>
+                                <a class="nav-link" href="../index.html">Início</a>
                             </li>
 
                             <li class="nav-item">
@@ -49,7 +49,7 @@ function Menu() {
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                             <li class="nav-item">
-                                <a class="nav-link" href="../Index.html">Início</a>
+                                <a class="nav-link" href="../index.html">Início</a>
                             </li>
 
                             <li class="nav-item">
