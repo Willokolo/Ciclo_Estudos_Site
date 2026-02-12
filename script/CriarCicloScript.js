@@ -68,7 +68,6 @@ function buttonToTable () {
     return botao;
 }
 
-
 function generateFormsMaterias() {
     const gerarMaterias = document.getElementById('gerarMaterias');
 

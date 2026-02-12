@@ -83,12 +83,24 @@ function populateTableCorrect() {
 }
 
 populateTableCorrect();
+function getBaseUrl() {
+  const host = window.location.hostname;
+
+  // Se estiver no GitHub Pages
+  if (host.includes("github.io")) {
+    return "/Ciclo_Estudos_Site";
+  }
+
+  // Se estiver localmente
+  return "..";
+}
 
 function apagarCiclo() {
+    const BASE_URL = getBaseUrl();
     if (confirm("Tem certeza que deseja apagar o ciclo?")) {
         localStorage.removeItem("materiasData");
         localStorage.removeItem("qtdHoras");
         localStorage.setItem("TabelaGerada", "false");
-        window.location.href = "../index.html";
+        window.location.href = `${BASE_URL}/index.html`;
     }
 }
