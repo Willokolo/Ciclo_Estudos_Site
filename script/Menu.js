@@ -1,4 +1,4 @@
-function initTabelaGerada() {
+ function initTabelaGerada() {
   if (localStorage.getItem("TabelaGerada") === null) {
     localStorage.setItem("TabelaGerada", "false");
   }
@@ -19,15 +19,15 @@ function Menu() {
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                             <li class="nav-item">
-                                <a class="nav-link" href="./Index.html">Início</a>
+                                <a class="nav-link" href="../Index.html">Início</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/CriarCiclo.html">Cria seu Cíclo</a>
+                                <a class="nav-link" href="../pages/CriarCiclo.html">Cria seu Cíclo</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/tabelaCiclo.html">Seu Cíclo</a>
+                                <a class="nav-link" href="../pages/tabelaCiclo.html">Seu Cíclo</a>
                             </li>
 
                         </ul>
@@ -49,15 +49,15 @@ function Menu() {
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                             <li class="nav-item">
-                                <a class="nav-link" href="./Index.html">Início</a>
+                                <a class="nav-link" href="../Index.html">Início</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/CriarCiclo.html">Cria seu Cíclo</a>
+                                <a class="nav-link" href="../pages/CriarCiclo.html">Cria seu Cíclo</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="./pages/tabelaCiclo.html">Seu Cíclo</a>
+                                <a class="nav-link disabled" href="../pages/tabelaCiclo.html">Seu Cíclo</a>
                             </li>
 
                         </ul>
