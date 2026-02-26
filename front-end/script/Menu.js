@@ -23,11 +23,11 @@ function Menu() {
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/CriarCiclo.html">Cria seu Cíclo</a>
+                                <a class="nav-link" href="./CriarCiclo.html">Cria seu Cíclo</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/tabelaCiclo.html">Seu Cíclo</a>
+                                <a class="nav-link" href="./tabelaCiclo.html">Seu Cíclo</a>
                             </li>
 
                         </ul>
@@ -53,11 +53,11 @@ function Menu() {
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/CriarCiclo.html">Cria seu Cíclo</a>
+                                <a class="nav-link" href="./CriarCiclo.html">Cria seu Cíclo</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="./pages/tabelaCiclo.html">Seu Cíclo</a>
+                                <a class="nav-link disabled" href="./tabelaCiclo.html">Seu Cíclo</a>
                             </li>
 
                         </ul>
