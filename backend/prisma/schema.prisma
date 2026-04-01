@@ -28,8 +28,6 @@ model Table {
   id          String @id @default(auto()) @map("_id") @db.ObjectId
   title       String 
   description String
-  qtdmateria  Int
-  hours       Int
 
   materia Materia[]
 
@@ -42,9 +40,7 @@ model Table {
 model Materia {
   id         String @id @default(auto()) @map("_id") @db.ObjectId
   title      String 
-  weight     Float
-  quantity   Int
-  difficulty Int
+  time       Int
 
   table   Table  @relation(fields: [tableId], references: [id])
   tableId String @db.ObjectId

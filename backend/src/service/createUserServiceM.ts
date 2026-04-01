@@ -1,13 +1,18 @@
+import { PrismaClient } from "@prisma/client";
 import { prisma } from "../prisma/index.js";
 
 interface MateriaRequest {
     title: string;
-    time: number;
+    weight: number;
+    quantity: number;
+    difficulty: number;
 }
 
 interface TableRequest {
     title: string;
     description: string;
+    hours: number;
+    qtdmateria: number;
     materia: MateriaRequest[];
 }
 
@@ -17,9 +22,12 @@ interface UserRequest {
     table?: TableRequest[];
 }
 
-class createUserService {
-
+class createUserServiceM {
     async execute({ name, password, table }: UserRequest) {
+
+        if (!name || !password) {
+            throw new Error("Preencha os campos");
+        }
 
         const user = await prisma.user.create({
             data: {
@@ -29,13 +37,18 @@ class createUserService {
                     create: table?.map(t => ({
                         title: t.title,
                         description: t.description,
+                        qtdmateria: t.qtdmateria,
+                        hours: t.hours,
                         materia: {
                             create: t.materia.map(m => ({
                                 title: m.title,
-                                time: m.time
+                                weight: m.weight,
+                                quantity: m.quantity,
+                                difficulty: m.difficulty
                             })) || []
                         }
                     })) || []
+
                 }
             },
             include: {
@@ -46,8 +59,8 @@ class createUserService {
                 }
             }
         })
-        return user
+        return user;
     }
 }
 
-export { createUserService };
+export {createUserServiceM};
