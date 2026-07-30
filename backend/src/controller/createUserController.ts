@@ -5,11 +5,11 @@ class createUserController {
     
     async handle( request: FastifyRequest, reply: FastifyReply) {
 
-        const { name , password , table } = request.body as { name: string , password: string, table: [] };
+    const { name , password , email , table } = request.body as { name: string , password: string, email: string, table: [] };
 
         const service = new createUserService();
 
-        const customer = await service.execute({ name , password , table })
+        const customer = await service.execute({ name , password , email , table })
 
         return reply.status(201).send(customer);
 

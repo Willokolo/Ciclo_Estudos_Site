@@ -1,4 +1,6 @@
+import 'dotenv/config';
 import { prisma } from "../prisma/index.js";
+import bcrypt from 'bcryptjs';
 
 interface MateriaRequest {
     title: string;
@@ -14,17 +16,21 @@ interface TableRequest {
 interface UserRequest {
     name: string;
     password: string;
+    email: string;
     table?: TableRequest[];
 }
 
 class createUserService {
 
-    async execute({ name, password, table }: UserRequest) {
+    async execute({ name, password, email, table }: UserRequest) {
+
+        const hashPassword = await bcrypt.hash(password, 10); 
 
         const user = await prisma.user.create({
             data: {
                 name,
-                password,
+                email,
+                password: hashPassword,
                 table: {
                     create: table?.map(t => ({
                         title: t.title,
